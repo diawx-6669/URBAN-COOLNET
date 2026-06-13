@@ -1,0 +1,24 @@
+# Огромные датасеты и CSV-таблицы (они весят слишком много)
+data_science/*.csv
+*.csv
+*.zip
+*.tar.gz
+
+# Системные файлы твоего Макбука (чтобы не мусорить в репозитории)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Кэш Python и виртуальное окружение
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Папки настроек VS Code
+.vscode/
+.idea/

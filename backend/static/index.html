@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban CoolNet — Зелёный Каркас</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Urban<strong>CoolNet</strong></span>
+      </a>
+      <div class="nav__lang" id="langSwitcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="kz">ҚЗ</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orbs">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="pulse-dot"></span>
+        <span data-i18n="hero.badge">ИИ-платформа для умных городов</span>
+      </div>
+      <h1 class="hero__title">
+        <span data-i18n="hero.title.1">Города раскаляются.</span><br/>
+        <span class="hero__title--accent" data-i18n="hero.title.2">ИИ возвращает им прохладу.</span>
+      </h1>
+      <p class="hero__slogan" data-i18n="hero.slogan">
+        Умное ИИ-озеленение, которое спасает жителей от зноя, а бюджет города — от перерасхода.
+      </p>
+      <p class="hero__sub" data-i18n="hero.sub">
+        Климатическая ИИ-платформа, которая находит скрытые тепловые аномалии в мегаполисе, строит ультра-комфортные тенистые маршруты и рассчитывает точную финансовую окупаемость (ROI) от каждого высаженного дерева.
+      </p>
+      <div class="hero__cta">
+        <a href="#b2g" class="btn btn--primary" data-i18n="hero.cta1">Открыть Дашборд Мэрии</a>
+        <a href="#b2c" class="btn btn--ghost" data-i18n="hero.cta2">Скачать приложение для жителей</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-pill"><span class="stat-num">5–8°C</span><span class="stat-label" data-i18n="hero.stat1">перегрев центра</span></div>
+        <div class="stat-pill"><span class="stat-num">3</span><span class="stat-label" data-i18n="hero.stat2">ИИ-модуля</span></div>
+        <div class="stat-pill"><span class="stat-num">$42.8K</span><span class="stat-label" data-i18n="hero.stat3">экономия/сезон</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span data-i18n="hero.scroll">Листай вниз</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEM ========== -->
+  <section class="section problem" id="problem">
+    <div class="container">
+      <div class="section-eyebrow" data-i18n="problem.eyebrow">Проблема</div>
+      <h2 class="section-title" data-i18n="problem.title">Каменные джунгли превращаются в сковороду</h2>
+      <p class="section-desc" data-i18n="problem.desc">
+        Из-за обилия асфальта и бетона возникает эффект «острова тепла» (Urban Heat Island). Летом температура в центре города на 5–8°C выше, чем в пригороде. Это скрытый кризис, бьющий по всем.
+      </p>
+      <div class="cards problem__cards">
+        <div class="card card--danger">
+          <div class="card__icon">🫀</div>
+          <h3 class="card__title" data-i18n="problem.c1.title">Тепловой удар на ровном месте</h3>
+          <p class="card__text" data-i18n="problem.c1.text">Аномальная жара провоцирует резкий рост сердечно-сосудистых заболеваний и опасных тепловых ударов у детей и пожилых прямо во время прогулок.</p>
+          <div class="card__tag" data-i18n="problem.c1.tag">Риски здоровья</div>
+        </div>
+        <div class="card card--warning">
+          <div class="card__icon">⚡</div>
+          <h3 class="card__title" data-i18n="problem.c2.title">Кондиционеры на пределе</h3>
+          <p class="card__text" data-i18n="problem.c2.text">Миллионы климатических систем работают на максимуме. Город тратит мегаватты лишней энергии на охлаждение зданий, переплачивая миллионы из бюджета.</p>
+          <div class="card__tag" data-i18n="problem.c2.tag">Энергетический коллапс</div>
+        </div>
+        <div class="card card--smog">
+          <div class="card__icon">🌫️</div>
+          <h3 class="card__title" data-i18n="problem.c3.title">Токсичный воздух</h3>
+          <p class="card__text" data-i18n="problem.c3.text">Раскаленный воздух блокирует циркуляцию ветра. В безветренные дни опасный смог, CO и NO₂ прижимаются к земле, заставляя город задыхаться.</p>
+          <div class="card__tag" data-i18n="problem.c3.tag">Смог-капкан</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI ARCHITECTURE ========== -->
+  <section class="section ai-arch" id="ai">
+    <div class="container">
+      <div class="section-eyebrow" data-i18n="ai.eyebrow">ИИ-Архитектура</div>
+      <h2 class="section-title" data-i18n="ai.title">Инженерия данных против глобального потепления</h2>
+      <p class="section-desc" data-i18n="ai.desc">
+        Мы не просто рисуем зеленые зоны — мы обучили три ИИ-модели на терабайтах реальных данных для сквозной эко-аналитики.
+      </p>
+      <div class="ai-modules">
+
+        <div class="ai-module" data-module="1">
+          <div class="ai-module__num">01</div>
+          <div class="ai-module__content">
+            <div class="ai-module__header">
+              <span class="ai-module__emoji">🛰️</span>
+              <div>
+                <div class="ai-module__name" data-i18n="ai.m1.name">«Картограф»</div>
+                <div class="ai-module__role">Vision & Ingestion</div>
+              </div>
+            </div>
+            <p class="ai-module__logic" data-i18n="ai.m1.logic">
+              Слой компьютерного зрения принимает спутниковые снимки высокого разрешения. Нейросеть архитектуры U-Net проводит попиксельную семантическую сегментацию — мгновенно вычисляя точный процент озеленения каждого двора.
+            </p>
+            <div class="ai-module__tech">
+              <span class="tech-tag">U-Net</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">Landsat 8/9</span>
+              <span class="tech-tag">OSM</span>
+            </div>
+            <div class="ai-module__dataset">
+              <span class="dataset-label" data-i18n="ai.dataset">Датасет:</span>
+              <span class="dataset-name">DeepGlobe Land Cover Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-module" data-module="2">
+          <div class="ai-module__num">02</div>
+          <div class="ai-module__content">
+            <div class="ai-module__header">
+              <span class="ai-module__emoji">🌡️</span>
+              <div>
+                <div class="ai-module__name" data-i18n="ai.m2.name">«Микроклимат»</div>
+                <div class="ai-module__role">Climate Engine</div>
+              </div>
+            </div>
+            <p class="ai-module__logic" data-i18n="ai.m2.logic">
+              Математическое ядро на базе ансамблей Random Forest сопоставляет векторные слои OpenStreetMap с тепловыми инфракрасными каналами (TIRS) Landsat 8/9. Модель предсказывает угрозы и концентрацию CO, NO₂ во время волн жары.
+            </p>
+            <div class="ai-module__tech">
+              <span class="tech-tag">Random Forest</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Rasterio</span>
+              <span class="tech-tag">TIRS</span>
+            </div>
+            <div class="ai-module__dataset">
+              <span class="dataset-label" data-i18n="ai.dataset">Датасет:</span>
+              <span class="dataset-name">Air Quality / US Pollution Data</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-module" data-module="3">
+          <div class="ai-module__num">03</div>
+          <div class="ai-module__content">
+            <div class="ai-module__header">
+              <span class="ai-module__emoji">📈</span>
+              <div>
+                <div class="ai-module__name" data-i18n="ai.m3.name">«ROI-Прогноз»</div>
+                <div class="ai-module__role">Business & Predictive Logic</div>
+              </div>
+            </div>
+            <p class="ai-module__logic" data-i18n="ai.m3.logic">
+              Экономический предиктор на базе градиентного бустинга LightGBM симулирует падение температуры через транспирацию листьев и тень крон, конвертируя кубометры зелени в сохраненные деньги бюджета.
+            </p>
+            <div class="ai-module__tech">
+              <span class="tech-tag">LightGBM</span>
+              <span class="tech-tag">HVAC Sim</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostGIS</span>
+            </div>
+            <div class="ai-module__dataset">
+              <span class="dataset-label" data-i18n="ai.dataset">Датасет:</span>
+              <span class="dataset-name">ASHRAE — Great Energy Predictor III</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== B2G DASHBOARD ========== -->
+  <section class="section b2g" id="b2g">
+    <div class="container">
+      <div class="section-eyebrow" data-i18n="b2g.eyebrow">Панель Мэрии · B2G</div>
+      <h2 class="section-title" data-i18n="b2g.title">Управление городом на основе данных, а не интуиции</h2>
+      <div class="dashboard">
+        <div class="dashboard__tabs" id="dashTabs">
+          <button class="dash-tab active" data-tab="heatmap" data-i18n="b2g.tab1">🗺 Тепловая 3D-карта</button>
+          <button class="dash-tab" data-tab="optimize" data-i18n="b2g.tab2">⚙️ Оптимизация</button>
+          <button class="dash-tab" data-tab="roi" data-i18n="b2g.tab3">💰 ROI-Калькулятор</button>
+        </div>
+        <div class="dashboard__body">
+
+          <div class="dash-panel active" id="panel-heatmap">
+            <div class="mock-map">
+              <div class="map-overlay">
+                <div class="heat-zone hz--red" style="top:20%;left:35%;width:120px;height:90px;">
+                  <span class="hz-label">+8°C</span>
+                </div>
+                <div class="heat-zone hz--orange" style="top:45%;left:55%;width:90px;height:70px;">
+                  <span class="hz-label">+5°C</span>
+                </div>
+                <div class="heat-zone hz--yellow" style="top:60%;left:20%;width:70px;height:55px;">
+                  <span class="hz-label">+3°C</span>
+                </div>
+                <div class="map-pin" style="top:22%;left:37%;">A-4</div>
+              </div>
+              <div class="map-legend">
+                <span class="leg--red"></span><span data-i18n="b2g.map.critical">Критично</span>
+                <span class="leg--orange"></span><span data-i18n="b2g.map.high">Высокий</span>
+                <span class="leg--yellow"></span><span data-i18n="b2g.map.medium">Средний</span>
+              </div>
+            </div>
+            <p class="dash-desc" data-i18n="b2g.heatmap.desc">Интерактивный цифровой двойник города. Подсвечивает критические зоны перегрева. Клик по любому кварталу показывает плотность застройки, дефицит деревьев и уровень теплового стресса населения.</p>
+          </div>
+
+          <div class="dash-panel" id="panel-optimize">
+            <div class="optimize-demo">
+              <div class="opt-map-stub">
+                <div class="opt-marker" style="top:30%;left:40%;">🌳</div>
+                <div class="opt-marker" style="top:55%;left:25%;">🌳</div>
+                <div class="opt-marker" style="top:45%;left:65%;">🌳</div>
+                <div class="opt-grid"></div>
+              </div>
+              <button class="btn btn--primary btn--optimize" id="optimizeBtn">
+                <span data-i18n="b2g.optimize.btn">⚙️ Запустить ИИ-анализ</span>
+              </button>
+              <div class="opt-result" id="optResult">
+                <div class="result-item">✅ <span data-i18n="b2g.optimize.r1">Найдено 14 пустующих участков под озеленение</span></div>
+                <div class="result-item">✅ <span data-i18n="b2g.optimize.r2">Приоритет: квартал A-4, трафик 3 200 чел/день</span></div>
+                <div class="result-item">✅ <span data-i18n="b2g.optimize.r3">Экономический эффект от плана: $186K/год</span></div>
+              </div>
+            </div>
+            <p class="dash-desc" data-i18n="b2g.optimize.desc">Один клик — и ИИ автоматически сопоставляет свободные участки земли, трафик людей и аномалии, расставляя маркеры идеальных точек для новых скверов.</p>
+          </div>
+
+          <div class="dash-panel" id="panel-roi">
+            <div class="roi-report">
+              <div class="roi-header">
+                <span class="roi-badge" data-i18n="b2g.roi.badge">ИИ-Отчёт · Квартал A-4</span>
+              </div>
+              <div class="roi-metrics">
+                <div class="roi-metric">
+                  <div class="roi-metric__label" data-i18n="b2g.roi.rec">Рекомендация</div>
+                  <div class="roi-metric__value" data-i18n="b2g.roi.rec.val">45 широколиственных кленов</div>
+                </div>
+                <div class="roi-metric roi-metric--highlight">
+                  <div class="roi-metric__label" data-i18n="b2g.roi.temp">Прогноз температуры</div>
+                  <div class="roi-metric__value">−2.4°C <span class="roi-sub" data-i18n="b2g.roi.temp.sub">в радиусе 300м</span></div>
+                </div>
+                <div class="roi-metric">
+                  <div class="roi-metric__label" data-i18n="b2g.roi.hvac">Экономия HVAC</div>
+                  <div class="roi-metric__value">12.3% <span class="roi-sub" data-i18n="b2g.roi.hvac.sub">для 8 зданий</span></div>
+                </div>
+                <div class="roi-metric roi-metric--money">
+                  <div class="roi-metric__label" data-i18n="b2g.roi.fin">Финансовый эффект / сезон</div>
+                  <div class="roi-metric__value">$42,800</div>
+                </div>
+              </div>
+            </div>
+            <p class="dash-desc" data-i18n="b2g.roi.desc">Калькулятор окупаемости: точный ИИ-прогноз финансовой выгоды от инвестиций в озеленение, понятный любому чиновнику.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== B2C APP ========== -->
+  <section class="section b2c" id="b2c">
+    <div class="container">
+      <div class="section-eyebrow" data-i18n="b2c.eyebrow">Приложение для жителей · B2C</div>
+      <h2 class="section-title" data-i18n="b2c.title">Ваш персональный климатический щит</h2>
+      <p class="section-desc" data-i18n="b2c.desc">Город может быть комфортным, даже если на улице +35°C.</p>
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature__phone">
+            <div class="phone-screen">
+              <div class="phone-map-stub">
+                <div class="route-line"></div>
+                <div class="tree-dot" style="top:30%;left:40%;">🌳</div>
+                <div class="tree-dot" style="top:50%;left:55%;">🌳</div>
+                <div class="route-pin pin-a">A</div>
+                <div class="route-pin pin-b">B</div>
+              </div>
+              <div class="phone-bar">
+                <span>🟢</span>
+                <span data-i18n="b2c.route.ui">−4°C · Тенистый маршрут</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <div class="feature__num">01</div>
+            <h3 class="feature__title" data-i18n="b2c.f1.title">Навигатор «Прохладный Маршрут»</h3>
+            <p class="feature__desc" data-i18n="b2c.f1.desc">
+              Хватит плавиться на раскаленном асфальте. Наш навигатор строит путь от точки А до точки Б не по самому короткому пути, а по самому тенистому. ИИ-анализ крон деревьев ведет вас через аллеи и парки, где температура в среднем на 4°C ниже.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature feature--reverse">
+          <div class="feature__phone">
+            <div class="phone-screen">
+              <div class="push-notification">
+                <div class="push-icon">🌡️</div>
+                <div class="push-text">
+                  <strong data-i18n="b2c.push.title">Внимание! Аномальная жара</strong>
+                  <span data-i18n="b2c.push.body">Ваш обычный маршрут +42°C. Предлагаем прохладный путь через парк Горького.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <div class="feature__num">02</div>
+            <h3 class="feature__title" data-i18n="b2c.f2.title">Умные Пуш-Уведомления</h3>
+            <p class="feature__desc" data-i18n="b2c.f2.desc">
+              Приложение знает ваши привычные маршруты. Если ИИ зафиксирует аномальный перегрев или пиковый уровень смога на вашей улице, он пришлет заботливое уведомление и предложит более прохладную альтернативу.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__phone">
+            <div class="phone-screen">
+              <div class="gamification">
+                <div class="eco-coins">
+                  <span class="coin-icon">🌱</span>
+                  <span class="coin-amount">+50 EcoCoins</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width:70%"></div>
+                </div>
+                <div class="rank-label" data-i18n="b2c.game.rank">🥇 Зелёный Страж города</div>
+              </div>
+            </div>
+          </div>
+          <div class="feature__text">
+            <div class="feature__num">03</div>
+            <h3 class="feature__title" data-i18n="b2c.f3.title">«Зеленый Гражданин» — Геймификация</h3>
+            <p class="feature__desc" data-i18n="b2c.f3.desc">
+              Станьте частью эко-обороны. Видите засыхающее дерево или раскаленный пустырь? Сделайте фото прямо в приложении. ИИ верифицирует геоданные, обновит карту и отправит заявку в горслужбы, а вы получите Эко-Коины — обменяйте их на самокаты или скидки в кофейнях.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ========== -->
+  <section class="section techstack" id="tech">
+    <div class="container">
+      <div class="section-eyebrow" data-i18n="tech.eyebrow">Под капотом</div>
+      <h2 class="section-title" data-i18n="tech.title">Технологический стек MVP</h2>
+      <div class="tech-grid">
+        <div class="tech-block">
+          <div class="tech-block__label">Backend</div>
+          <div class="tech-pills">
+            <span class="tech-pill tp--blue">Python</span>
+            <span class="tech-pill tp--blue">FastAPI</span>
+            <span class="tech-pill tp--blue">PostgreSQL</span>
+            <span class="tech-pill tp--blue">PostGIS</span>
+          </div>
+        </div>
+        <div class="tech-block">
+          <div class="tech-block__label">Data Science</div>
+          <div class="tech-pills">
+            <span class="tech-pill tp--purple">PyTorch</span>
+            <span class="tech-pill tp--purple">Scikit-Learn</span>
+            <span class="tech-pill tp--purple">LightGBM</span>
+            <span class="tech-pill tp--purple">Rasterio</span>
+          </div>
+        </div>
+        <div class="tech-block">
+          <div class="tech-block__label">Frontend</div>
+          <div class="tech-pills">
+            <span class="tech-pill tp--teal">React.js</span>
+            <span class="tech-pill tp--teal">TailwindCSS</span>
+            <span class="tech-pill tp--teal">Mapbox GL</span>
+          </div>
+        </div>
+        <div class="tech-block">
+          <div class="tech-block__label">Mobile</div>
+          <div class="tech-pills">
+            <span class="tech-pill tp--green">Flutter</span>
+            <span class="tech-pill tp--green">React Native</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="logo-icon">🌿</span>
+          <span class="logo-text">Urban<strong>CoolNet</strong></span>
+          <p class="footer__copy" data-i18n="footer.copy">© 2026 Urban CoolNet. Разработано в рамках хакатона.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="footer__btn" data-i18n="footer.pitch">📄 Скачать Презентацию</a>
+          <a href="https://github.com" target="_blank" class="footer__btn" data-i18n="footer.github">🐙 Смотреть на GitHub</a>
+          <a href="mailto:team@urbancoolnet.ai" class="footer__btn footer__btn--cta" data-i18n="footer.contact">✉️ Связаться с командой</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
